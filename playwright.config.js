@@ -12,6 +12,12 @@ module.exports = defineConfig({
     baseURL: 'http://localhost:5500',
     headless: true,
   },
+    webServer: {
+    command: 'npx http-server . -p 5500',
+    port: 5500,
+    reuseExistingServer: !process.env.CI, // Reuse locally, start fresh in CI
+    timeout: 120 * 1000, // Wait up to 2 minutes
+  },
   projects: [
     {
       name: 'Chromium',
