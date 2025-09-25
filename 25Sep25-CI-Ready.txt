@@ -1,0 +1,30 @@
+Integrate Playwright with GitHub Actions to run your tests automatically on every push
+or pull request.
+
+By the end of this session, you will have full CI integration, HTML test reports and
+everything set up in GitHub
+
+Step 1: Create a New Repository
+    Go to GitHub -> New Repository
+    Name it pw-tests
+    do not initialize with README
+
+Step 2: Verify Git Identity
+    CMD > git config --global user.Name
+          git config --global user.email
+
+    set it,
+
+    CMD> git config --global user.name "Your Name"
+         git config --global user.email "myname@gmail.com"
+
+
+Step 3: initialize Git in VSCode
+    Open project folder
+    1. Terminal
+    2. > git init
+        > git add .
+        > git commit -m "Initial commit - pw tests"
+
+        Git now tracks your project
+        
