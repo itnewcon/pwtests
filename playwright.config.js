@@ -10,7 +10,7 @@ module.exports = defineConfig({
   reporter: [[ 'html', {open: 'html '}]],
   use: {
     baseURL: 'http://localhost:5500',
-    headless: true,
+    headless: false,
   },
   projects: [
     {
