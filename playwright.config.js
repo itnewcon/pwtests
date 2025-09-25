@@ -61,4 +61,12 @@ Set up github actions to run tests
     
     $ mkdir -p .github/workflows
 
-*/
+> Then Push workflow 
+    $ git add .    
+    $ git commit -m "Add Actions CI workflow"
+        [main f8c9022] Add Actions CI workflow
+        2 files changed, 85 insertions(+)
+        create mode 100644 .github/workflows/playwright.yaml
+
+    $ git push
+    */
