@@ -10,7 +10,7 @@ module.exports = defineConfig({
   reporter: [[ 'html', {open: 'html '}]],
   use: {
     baseURL: 'http://localhost:5500',
-    headless: false,
+    headless: true,
   },
   projects: [
     {
@@ -82,33 +82,5 @@ Set up github actions to run tests
         To open last HTML report run:
 
         npx playwright show-report
-
-PS C:\vat\StudentsWorkspace\ct-pwjs\myjs-ct\d26> npx playwright test
-
-Running 1 test using 1 worker
-  1 passed (3.3s)
-
-To open last HTML report run:
-
-  npx playwright show-report
-
-PS C:\vat\StudentsWorkspace\ct-pwjs\myjs-ct\d26> git add .
-warning: in the working copy of 'test-results/.last-run.json', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'playwright-report/index.html', LF will be replaced by CRLF the next time Git touches it
-PS C:\vat\StudentsWorkspace\ct-pwjs\myjs-ct\d26> git commit -m "Add Reports CI Workflow"
-
-[main 4922a88] Add Reports CI Workflow
- 2 files changed, 85 insertions(+), 1 deletion(-)
- create mode 100644 playwright-report/index.html
-PS C:\vat\StudentsWorkspace\ct-pwjs\myjs-ct\d26> git push
-Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (5/5), 173.80 KiB | 4.46 MiB/s, done.
-Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To https://github.com/itnewcon/pwtests.git
-   f8c9022..4922a88  main -> main        
 
     */
