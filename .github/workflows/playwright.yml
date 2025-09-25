@@ -28,10 +28,7 @@ jobs:
         run: npm install
 
 
-      - name: Install Playwright browsers
-        run: |
-          chmod +x ./node_modules/.bin/playwright
-          npx playwright install --with-deps
+
 
 
       - name: Run Playwright Tests
